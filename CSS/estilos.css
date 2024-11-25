@@ -1,0 +1,293 @@
+/* CSS general de elementos */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #222;
+    color: white;
+    font: 200 14px "Poppins", sans-serif;
+}
+h2{
+    font-size: 36px;
+    line-height: 36px;
+}
+h3{
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+    
+}
+section{
+    padding: 10px 100px 10px 100px;  
+}
+p{
+    text-align: justify;
+}
+cite{
+    font-weight: 300;
+}
+i{
+    font-size: 24px;
+}
+i:hover{
+    color:#ffc900;
+}
+a{
+    text-decoration: none;
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white;
+}
+a:-moz-any-link{
+    color: white;
+}
+a:hover{
+    color:#ffc900;
+}
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+    /* width: 30px; */
+    margin-right: 5px;
+}
+button{
+    border-radius: 10px;
+}
+/* CSS IDs y Clase */
+.hastag{
+    color: #ffc900;
+}
+.logo{
+    padding-top: 0px;
+}
+#redessociales{
+    margin-top: 20px;
+}
+#inicio{
+    background-image: url(../imagenes/inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 75px;
+}
+#experiencia{
+    background-color: white;
+    color: #222;
+}
+#portfolio{
+    border-top: 1px solid #ffc900;
+}
+.masinfo button{
+    background-color: #ffc900;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+}
+/* Grid sobremi */
+#sobremi{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+#sobremi h2{
+    margin-bottom: 15px;
+}
+#sobremi .masinfo{
+    margin: 15px;
+}
+
+#sobremi .masinfo button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+#imgsobremi img{
+    border-radius: 10px;
+}
+/* Card portfolio */
+.filaportfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+.card:hover{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+        transition-behavior: normal, normal;
+        transition-duration: 0.2s, 0.2s;
+        transition-timing-function: ease, ease;
+        transition-delay: 0s, 0s;
+        transition-property: background-color, color;
+
+}
+.card img{
+    border-radius: 13px 13px 0 0;
+}
+.card h3{
+    color: #ffc900;
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card h3, .card h4, .card p, .masinfo{
+    padding: 0 15px;
+}
+.card .masinfo{
+    margin: 15px 0px 15px 0 px;
+    height: 25px;
+}
+.card .sep{
+    margin: 0px 5px 5px 0;
+    border: 1px solid #ffc900;
+}
+.card .masinfo button{
+    margin-top: 5px;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+    border: transparent;
+}
+/* Card experiencia */
+.gridexp{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center; /* Centra los cards horizontalmente */
+    align-items: center; /* Centra los cards verticalmente (si es necesario) */
+    gap: 50px; /* Espaciado entre los cards */
+    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1600px; /* Ajusta según tu diseño */
+    padding: 20px;
+}
+@media (min-width: 400px){
+    .gridexp{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .gridexp {
+      flex: 1 1 calc(50% - 20px); /* Dos cards por fila en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gridexp {
+      flex: 1 1 100%; /* Un card por fila en pantallas pequeñas */
+    }
+  }
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+    flex: 1 1 calc(33.333% - 20px); /* Ocupa un tercio del contenedor con espacio */
+    max-width: 400px; /* Tamaño máximo del card */
+    min-width: 250px; /* Tamaño mínimo para evitar que se encojan demasiado */
+    box-sizing: border-box; 
+}
+.cardexp:hover{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border: 1px solid #222;
+    transition: background-color .2s ease, color .2s ease;
+        transition-behavior: normal, normal;
+        transition-duration: 0.2s, 0.2s;
+        transition-timing-function: ease, ease;
+        transition-delay: 0s, 0s;
+        transition-property: background-color, color;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.card h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardexp li{
+    height: 30px;
+}
+/* Formulario */
+#contactar{
+    background-color: #ffc900;
+    color: #222;
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    grid-column: 2/3;
+    justify-self: end;
+}
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float:left;
+}
