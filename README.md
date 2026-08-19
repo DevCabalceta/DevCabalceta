@@ -37,6 +37,7 @@
   <img src="https://skillicons.dev/icons?i=dotnet" alt="dotnet" width="40" height="40"/>
   <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb" width="40" height="40"/>
   <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=firebase" alt="firebase" width="40" height="40"/>
   <img src="https://skillicons.dev/icons?i=figma" alt="figma" width="40" height="40"/>
   <img src="https://skillicons.dev/icons?i=postman" alt="postman" width="40" height="40"/>
   <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40"/>
